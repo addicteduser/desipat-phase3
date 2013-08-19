@@ -29,8 +29,6 @@ public class login extends JFrame {
     public JLabel warning;
         
 
-    // Heeeeelllooooo Triaaaaal
-    // Hello from TinTin
     //For JDBC
     protected static Connection connect;
     private UserDAO udao = UserDAO.getInstance();
