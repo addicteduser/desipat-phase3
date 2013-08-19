@@ -30,6 +30,7 @@ public class login extends JFrame {
         
 
     // Heeeeelllooooo Triaaaaal
+    // Hello from TinTin
     //For JDBC
     protected static Connection connect;
     private UserDAO udao = UserDAO.getInstance();
