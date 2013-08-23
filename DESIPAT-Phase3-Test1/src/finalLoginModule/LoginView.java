@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 /**
- * VIEW for Login GUI
+ * VIEW for Login
  */
 public class LoginView extends JFrame {
 
@@ -36,16 +36,16 @@ public class LoginView extends JFrame {
 	 * @throws Exception
 	 */
 	private void initialize() throws Exception {
-		lblBG = new JLabel(new ImageIcon(this.getClass().getClassLoader().getResource("pictures/loginbg.png")));
+		lblBG = new JLabel(new ImageIcon(LoginView.class.getResource("/finalLoginModule/loginbg.png")));
 
 		txtUsername = new JTextField();
 		txtPass = new JPasswordField();
 
-		btnLogin = new JButton(new ImageIcon(this.getClass().getClassLoader().getResource("/pictures/login_OFF.png")));
-		btnLogin.setRolloverIcon(new ImageIcon(this.getClass().getClassLoader().getResource("/pictures/login_ON.png")));
-		btnLogin.setSelectedIcon(new ImageIcon(this.getClass().getClassLoader().getResource("/pictures/login_ON.png")));
+		btnLogin = new JButton(new ImageIcon(LoginView.class.getResource("/finalLoginModule/login_OFF.png")));
+		btnLogin.setRolloverIcon(new ImageIcon(LoginView.class.getResource("/finalLoginModule/login_ON.png")));
+		btnLogin.setSelectedIcon(new ImageIcon(LoginView.class.getResource("/finalLoginModule/login_ON.png")));
 
-		lblNotMatch = new JLabel(new ImageIcon(this.getClass().getClassLoader().getResource("pictures/notmatch.png")));
+		lblNotMatch = new JLabel(new ImageIcon(LoginView.class.getResource("/finalLoginModule/notmatch.png")));
 		lblNotMatch.setBounds(245, 365, lblNotMatch.getIcon().getIconWidth(), lblNotMatch.getIcon().getIconHeight());
 		lblNotMatch.setVisible(false);
 	}

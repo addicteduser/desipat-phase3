@@ -4,6 +4,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
 
+import finalNavigatorModule.NavigatorController;
+import finalNavigatorModule.NavigatorModel;
+import finalNavigatorModule.NavigatorView;
+
 /**
  * CONTROLLER for Login
  */
@@ -59,9 +63,7 @@ public class LoginController {
 					loginModel.getUserDAO(loginView.getTxtUsername());
 					if (loginModel.checkMatch(loginModel.getUserMdl(), loginView.getTxtUsername(), loginView.getTxtPass())) {
 						loginView.setVisible(false);
-						System.out.println("LOGIN SUCCESS");
-						// navigator n = new
-						// navigator(getUser(username.getText()));
+						new NavigatorController(new NavigatorView(), new NavigatorModel(loginModel.getUser(loginView.getTxtUsername().getText())));
 						System.out.println("SYSTEM LOG");
 						// systemLogDAO.getInstance().saveAccess("Logged in to the system", username.getText().toString());
 					} else {

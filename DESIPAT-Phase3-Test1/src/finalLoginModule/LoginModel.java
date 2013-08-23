@@ -9,7 +9,7 @@ import DAO.UserDAO;
 import Model.UserModel;
 
 /**
- * MODEL for Login Error checking
+ * MODEL for Login
  */
 public class LoginModel {
 	private UserDAO udao = UserDAO.getInstance();
