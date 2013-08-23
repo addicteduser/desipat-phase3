@@ -1,5 +1,7 @@
 package main;
 
 public class Driver {
- // HELLO KYLE!!
+	public static void main(String[] args) {
+		new LoginController(new loginView(), new LoginModel());
+	}
 }
