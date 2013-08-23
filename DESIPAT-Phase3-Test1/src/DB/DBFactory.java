@@ -1,7 +1,6 @@
 package DB;
 
 import java.sql.Connection;
-import java.util.Enumeration;
 import java.util.ResourceBundle;
 
 /**
@@ -36,18 +35,15 @@ public abstract class DBFactory {
 	 */
 	public abstract Connection getConnection();
 
+	/*
+	 * GETTERS 
+	 */
+	
 	/**
 	 * @return the dbDriver
 	 */
 	public String getDbDriver() {
 		return dbDriver;
-	}
-
-	/**
-	 * @param dbDriver the dbDriver to set
-	 */
-	public void setDbDriver(String dbDriver) {
-		this.dbDriver = dbDriver;
 	}
 
 	/**
@@ -58,24 +54,10 @@ public abstract class DBFactory {
 	}
 
 	/**
-	 * @param dbUrl the dbUrl to set
-	 */
-	public void setDbUrl(String dbUrl) {
-		this.dbUrl = dbUrl;
-	}
-
-	/**
 	 * @return the dbName
 	 */
 	public String getDbName() {
 		return dbName;
-	}
-
-	/**
-	 * @param dbName the dbName to set
-	 */
-	public void setDbName(String dbName) {
-		this.dbName = dbName;
 	}
 
 	/**
@@ -86,23 +68,9 @@ public abstract class DBFactory {
 	}
 
 	/**
-	 * @param username the username to set
-	 */
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-	/**
 	 * @return the password
 	 */
 	public String getPassword() {
 		return password;
-	}
-
-	/**
-	 * @param password the password to set
-	 */
-	public void setPassword(String password) {
-		this.password = password;
 	}
 }
