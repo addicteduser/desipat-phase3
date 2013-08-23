@@ -5,20 +5,19 @@
 package Model;
 
 /**
- *
+ * 
  * @author Aram
  */
-public class ClassificationModel{
-    
-      private String classification;
-    
- 
-    public String getClassification() {
-        return classification;
-    }
+public class ClassificationModel {
 
-    public void setClassification(String classification) {
-        this.classification = classification;
-    }
-    
+	private String classification;
+
+	public String getClassification() {
+		return classification;
+	}
+
+	public void setClassification(String classification) {
+		this.classification = classification;
+	}
+
 }
