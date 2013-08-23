@@ -1,16 +1,8 @@
-package main;
+package finalLoginModule;
 
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.sql.SQLException;
-
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-
-import Model.UserModel;
 
 /**
  * CONTROLLER for Login
@@ -70,8 +62,6 @@ public class LoginController {
 						// systemLogDAO.getInstance().saveAccess("Logged in to the system", username.getText().toString());
 					} else {
 						loginView.getLblNotMatch().setVisible(true);
-						//loginView.getLblWarning().setText("Username and password did not match");
-						//loginView.getLblWarning().setVisible(true);
 					}
 				} catch (SQLException e) {
 					e.printStackTrace();
